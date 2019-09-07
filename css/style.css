@@ -1,0 +1,139 @@
+html {
+  height:100%;	
+}
+body {
+	text-align: center;
+	margin: 0;
+	min-height: 100%;
+ 	display: flex;
+ 	flex-direction: column;
+}
+header{
+	background-color:#F15B31;
+	color:#ffffff;
+	padding: 30px 0;
+}
+h1 {
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 45px;
+	text-transform: uppercase;
+	margin: 0;	
+	transition-duration: .1s;					/*transition speed for winning message*/
+  	-webkit-transition-duration: .1s;
+ 	-moz-transition-duration: .1s;
+}
+h2 {
+	font-family: "Raleway", sans-serif;
+	color: #0d2c40;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0;
+}
+nav{
+	background-color:#00A6B3;
+	padding: 20px 0;
+	color:#FFFFFF;
+}
+a {  
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 20px;
+	color: #ffffff;
+	border-bottom: 2px solid transparent; 
+}
+a:hover {
+	border-bottom: 2px solid white;
+}
+main{
+	width: 850px;
+	margin: 0 auto;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+div{									
+	transition-duration: .8s;					/* transition speed for instructions*/
+  	-webkit-transition-duration: .8s;
+ 	-moz-transition-duration: .8s;
+}
+p {
+	font-family: "Droid Serif", serif;
+	line-height: 26px;
+	font-size: 18px;
+}
+img{
+	margin: 0 8px;
+}
+footer {
+	text-transform: uppercase;
+	padding: 0 20px;
+	background-color: #0D2c40; 
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em; 
+	font-weight: 500;
+}
+.message {
+	font-family: "Raleway", sans-serif;
+}
+.name {
+	color:#f15b31;
+	font-weight: 700;
+}
+#p {											/*custom instructions paragraph style*/
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+#blank {										/*auto vertical centering*/
+	flex: 1;
+	min-height: 16px;
+}
+.show {										/*reveals instructions and winning message*/
+	opacity: 100;
+}	
+.hide {											/*hides instructions and winning message*/
+	opacity: 0;
+}
+.noclick {										/*allows only 2 cards to show at a time*/
+	pointer-events: none;
+}
+@media (max-width: 800px) {						/*custom mobile css*/
+header {
+	padding: 20px 20px;
+}
+h1 {
+	font-size: 35px;
+}
+nav {
+	padding: 10px 0;
+}
+#blank {
+	min-height: 0;
+}
+main{
+	max-width: 300px;
+}
+#win {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 5px 0;
+}
+img {
+	height: 150px;
+	margin: 0px 4px 4px 4px;
+}
+#p {
+	margin-top: 0px;
+	margin-bottom: 7px;
+	line-height: 22px;
+	font-size: 14px;
+}
+}
